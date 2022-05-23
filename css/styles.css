@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* *********************** { Table CSS Section ] ***************************** */
+thead{
+    background-color:#bfc6cc ;
+}
+.numberIndicator{
+    display: inline-block;
+    margin-left: 10px;
+}
+.tableContainer>h4{
+    margin: 20px 2rem;
+}
+/* Table Section */
+.studentList{
+    margin:0 auto;
+    text-align:center;
+}
+.inline-button>i{
+    margin:0 8px;
+}
+
+/* Delete All Button */
+
+#deleteAll{
+    margin:2rem auto;
+    display:block;
+}
+
+
+
+/* *********** [Context - Menu ] ******************* */
+#context-menu{
+    position: absolute;
+    top: 50px;
+    left: 269px;
+    z-index:100000;
+    width:auto;
+    height: auto;
+    background:#fff;
+    display:none;
+}
+#context-menu .popup-box {
+    cursor:pointer;
+    border-radius: inherit;
+}
+#context-menu.visible{
+    display:block;
+}@media only screen and (max-width: 1060px)  and (min-width: 700px){
+    #context-menu{
+        position: absolute;
+        top:50px;
+        left:160px;
+    }
+    .popup-box{
+        height: 70vh;
+        max-width: 90vw;
+    }
+}
+@media only screen and (max-width: 700px)  and (min-width: 200px) {
+    #context-menu{
+        position: absolute;
+        top:50px;
+        left:5vw;
+    }
+    .popup-box{
+        height: 70vh;
+        max-width: 90vw;
+    }
+}
+.blur{
+    filter: blur(1px);
+}
+
+
+
+
+/* ****************** [Pop-Up Section] ********************** */
+.position{
+    position:absolute;
+    /* display:none; */
+}
+.popup-box{
+    display:flex;
+    margin:auto;
+    /* margin-top:2rem; */
+    /* align-items: center; */
+    /* text-align:center; */
+    /* justify-content:center; */
+    flex-direction: column;
+    box-sizing: border-box;
+    width:50rem;
+    height:40rem;
+    border: 2px solid #000000;
+    font-weight: bold;
+}
+/* Header Section */
+.header{
+    display: flex;
+    width:100%;
+    height: 2rem;
+    border-bottom: 2px solid #000;
+    margin-bottom: 2rem;
+    padding: 3px;
+    justify-content:space-between;
+    align-items: baseline;
+}
+
+.header>label:hover{
+    cursor: pointer;
+    filter: invert(35%);
+}
+/* Tab Section */
+.tab{
+    height:100%;
+}
+.tabs{
+    display: flex;
+    position: relative;
+    left:40px;
+    margin-bottom: 5px;
+}
+.tab-links{
+    border-bottom: none;
+    background-color: rgb(224, 224, 224);
+    padding: 5px 10px 5px ;
+    margin: 0 3px;
+    position: relative;
+    border: 1px solid #000;
+    border-bottom:none;
+    /* border-radius: 10px; */
+    top:5px;
+}
+/* Tab Content Section */
+.tab-contents{
+    display:none;
+    margin:0 auto;
+    padding: 2rem 1.6rem;
+    line-height: 1.5;
+    border: 1px solid #000;
+    justify-content:center;
+    width: 95%;
+    height:75%;
+}
+.student-info-form{
+    display: flex;
+    flex-direction:column;
+    line-height:1.2;
+    width: 100%;
+    height:100%;
+}
+.student-info-form>div{
+    margin: 20px 0;
+}
+.student-info-form input{
+    border: 2px solid #000;
+}
+/* Name Input Section */
+/* .name-inp{
+    display: flex;
+    justify-content:space-between;
+} */
+/* Grade and Division Section */
+/* .grade-division{
+    display: flex;
+    justify-content:space-between;
+} */
+
+/* .grade-select{
+    display: inline-block;
+    width:100%;
+    padding:0.5px 28px;
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")no-repeat right 0.75rem center/8px 10px;
+    vertical-align: middle;
+    border: 2px solid #000;
+    appearance: none;
+} */
+
+
+/* Date Section */
+/* .date-gen{
+    display: flex;
+    justify-content:space-between;
+} */
+.radio{
+    display: flex;
+    justify-content:space-between;
+}
+.radio>div{
+    justify-content:space-between;
+}
+.male{
+    margin-right:20px;
+    justify-content:baseline;
+}
+.female{
+    justify-content:baseline;
+}
+/* Extra Curricular Section */
+.extra-curricular{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    height: 85%;
+    
+}
+#activity-container{
+    height: 285px;
+    width:100%;
+    overflow-y:scroll;
+}
+.items{
+    box-sizing: none;
+    width: 13rem;
+    height:120px;
+    /* margin:10px 0; */
+}
+.times{
+    display: flex;
+    justify-content:space-between;
+}
+.times>input{
+    padding: 0 1px;
+    width: 80px;
+    height: 30px;
+    font-size: 11px;
+}
+/* Add Activity Button */
+.addActivityBtn{
+    display: block;
+    position: relative;
+    text-align:right;
+    margin-top: 15px;
+}
+/* Scroll Slider CSS */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(92, 92, 92); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #282626; 
+  }
+/* Footer Section */
+.footer{
+    display: flex;
+    margin-top:auto;
+    border-top: 2px solid #000;
+    width: 100%;
+    height: 3.6rem;    
+    justify-content: space-between;
+    /* position: relative; */
+    /* top:50px; */
+}
+.footer button{
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px; 
+}
+.footer button span{
+    margin-left: 3px;
+}
+.save:hover{
+    cursor:pointer;
+    /* color: #000; */
+    background-color:rgb(71, 69, 69);
+}
+
+/* ----------------------------------------------- */
+/* ************* [Extra Classes] ********************** */
+.active{
+    background-color: #fff;
+    color: #000;
+    top:6px;
+    /* border-bottom: none; */
+    padding-bottom: 10px;
+    display:block;
+    border-radius:5px 5px  0 0 ;
+    
+}
+
+.tab-links:hover{
+    background-color: rgb(250, 244, 244);
+}
+.active:hover{
+    background-color:#fff;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
